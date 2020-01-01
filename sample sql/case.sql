@@ -14,6 +14,4 @@ from Customers,
 from ClientFlowerMatch, Flowers
 where ClientFlowerMatch.FlowerID = Flowers.FlowerID) as FlowerResults
 
-where FlowerResults.Zip = Customers.Zip and
-Customers.CustomerNumber = '10'
-order by FlowerResults.Performance, FlowerResults.CommonName
+
